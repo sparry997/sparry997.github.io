@@ -5,6 +5,10 @@
 
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background: #2c3539;
+     /* Workaround for some mobile browsers */
+
+    
+   /* font-family: 'Poppins', sans-serif;
+    //background: #2c3539; */
 }
+
