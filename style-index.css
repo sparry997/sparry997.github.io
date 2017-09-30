@@ -9,13 +9,6 @@ body {
     background: #2c3539;
 }
 
-p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
-    font-weight: 300;
-    line-height: 1.7em;
-    color: #999;
-}
 
 a, a:hover, a:focus {
     color: inherit;
@@ -24,10 +17,10 @@ a, a:hover, a:focus {
 }
 
 .navbar {
-    padding: 15px 10px;
+    padding: 1em 1em;
     background: #3b444b;
     border: none;
-    border-radius: 0;
+    border-radius: 10;
     margin-bottom: 40px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
@@ -56,7 +49,7 @@ a, a:hover, a:focus {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #A9A9A9;
+    background: #C28080;
     color: #fff;
     transition: all 0.3s;
 }
@@ -67,7 +60,7 @@ a, a:hover, a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #696969;
+    background: #970202;
 }
 
 #sidebar ul.components {
@@ -86,8 +79,8 @@ a, a:hover, a:focus {
     display: block;
 }
 #sidebar ul li a:hover {
-    color: #A9A9A9;
-    background: #fff;
+    color: #970202;
+    background: #EEECEC;
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
@@ -149,6 +142,7 @@ a.article, a.article:hover {
 #content {
     padding: 20px;
     min-height: 100vh;
+    max-height: 100vh;
     transition: all 0.3s;
 }
 
