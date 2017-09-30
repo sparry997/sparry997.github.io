@@ -56,18 +56,24 @@ a, a:hover, a:focus {
 }
 
 .descbar{
-    position: relative;
-    top: 100%;
-    width:100%;
-    height:10%;
-    background-color: #970202;
+    
 
 }
 
 .jumbotron{
-    background: none;
-    width: 100%;
-    z-index: 4;
+   position: relative;
+    top: 60%;
+    width:100%;
+    background-color: rgba(151, 2, 2, 0.8);
+    padding: 1%;
+    
+}
+
+.desc{
+    vertical-align: middle;
+    text-align: center;
+
+    
     
 }
 
