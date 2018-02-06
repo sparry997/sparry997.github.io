@@ -1,4 +1,4 @@
-body {
+body, expList {
   font-family: 'Open Sans', serif;
   padding-top: 54px;
   background-color: #3d3d3d;
@@ -6,6 +6,29 @@ body {
     
 }
 
+.c{
+    font-family: 'Open Sans', serif;
+  padding-top: 54px;
+  color: #a9abad;
+}
+
+.anaSkills, .picCap{
+    text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Saira Extra Condensed', serif;
+  font-size: 1.35rem;
+      color: #a9abad;
+}
+
+.c:hover{
+    color: #701e1e;
+} 
+
+.portfoliopics{
+     border-style: solid;
+    border-width: 5px;
+    border-color: #a9abad;
+}
 @media (min-width: 992px) {
   body {
     padding-top: 0;
@@ -58,7 +81,7 @@ h2 {
 }
 
 .list-icons .list-inline-item i:hover {
-  color: #BD5D38;
+  color: #701e1e;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
