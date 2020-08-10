@@ -34,12 +34,23 @@
             "styles": [
               {
                 "input": "src/theme/variables.scss"
+                
               },
               {
                 "input": "src/global.scss"
+              },
+              {
+                "input":"node_modules/bootstrap/dist/css/bootstrap.min.css"
               }
             ],
-            "scripts": []
+            "scripts": [
+              {
+                "input": "node_modules/jquery/dist/jquery.min.js"
+              },
+              {
+                "input": "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              }
+            ]
           },
           "configurations": {
             "production": {
