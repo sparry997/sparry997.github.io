@@ -1,0 +1,7 @@
+{
+  "name": "sparry997.github.io",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
