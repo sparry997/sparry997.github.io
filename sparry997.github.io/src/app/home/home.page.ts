@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { Animation, AnimationController } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-home',
@@ -7,6 +10,12 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(private animationCtrl: AnimationController) {
+
+    const animation: Animation = this.animationCtrl.create()
+    .addElement(document.getElementById("socialLinkContainer"))
+    .duration(10000)
+    .fromTo('opacity', '0', '1');
+  }
 
 }

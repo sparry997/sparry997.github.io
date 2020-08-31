@@ -51,7 +51,7 @@
   font-size: 6rem;
   color:White;
   white-space: nowrap;
-
+  -webkit-animation: fadeInFromNone 2s ease-out;
 
 }
 
@@ -71,7 +71,7 @@
   opacity: 0.6;
   white-space: nowrap;
   
-
+  -webkit-animation: fadeInFromNone 2s ease-out;
 
 
 }
@@ -98,6 +98,7 @@
   background-color: black;
   backdrop-filter: blur(5px);
   opacity: .6;
+  -webkit-animation: fadeInFromNone 2s ease-out;
 
 }
 
@@ -125,14 +126,53 @@
   left: 50%;
   position: absolute;
   --ion-background-color: transparent;
+  
 }
 
 #socialIcon{
   font-size: 50px;
   padding: 10px;
   color: black;
+  -webkit-animation: fadeInFromNone-Icons 2s ease-out;
+
 }
 
 #socialIcon:hover {
   color:white;
 }
+
+
+@-webkit-keyframes fadeInFromNone {
+  0% {
+      display: none;
+      opacity: 0;
+  }
+
+  1% {
+      display: block;
+      opacity: 0;
+  }
+
+  100% {
+      display: block;
+      opacity: .6;
+  }
+}
+
+@-webkit-keyframes fadeInFromNone-Icons {
+  0% {
+      display: none;
+      opacity: 0;
+  }
+
+  1% {
+      display: block;
+      opacity: 0;
+  }
+
+  100% {
+      display: block;
+      opacity: 1;
+  }
+}
+
