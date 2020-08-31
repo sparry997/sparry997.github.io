@@ -51,7 +51,7 @@
   font-size: 6rem;
   color:White;
   white-space: nowrap;
-  -webkit-animation: fadeInFromNone 2s ease-out;
+   -webkit-animation: fadeInFromNone 2s ease-out;
 
 }
 
@@ -71,7 +71,7 @@
   opacity: 0.6;
   white-space: nowrap;
   
-  -webkit-animation: fadeInFromNone 2s ease-out;
+   -webkit-animation: fadeInFromNone 2s ease-out;
 
 
 }
@@ -98,7 +98,7 @@
   background-color: black;
   backdrop-filter: blur(5px);
   opacity: .6;
-  -webkit-animation: fadeInFromNone 2s ease-out;
+   -webkit-animation: fadeInFromNone 2s ease-out;
 
 }
 
@@ -126,6 +126,7 @@
   left: 50%;
   position: absolute;
   --ion-background-color: transparent;
+  background-color: transparent;
   
 }
 
@@ -133,7 +134,9 @@
   font-size: 50px;
   padding: 10px;
   color: black;
-  -webkit-animation: fadeInFromNone-Icons 2s ease-out;
+ --ion-background-color: transparent;
+  background-color: transparent;
+  // -webkit-animation: fadeInFromNone-Icons 2s ease-out;
 
 }
 
@@ -167,11 +170,13 @@
 
   1% {
       display: block;
+      --ion-background-color: transparent;
       opacity: 0;
   }
 
   100% {
       display: block;
+      --ion-background-color: transparent;
       opacity: 1;
   }
 }

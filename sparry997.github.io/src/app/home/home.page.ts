@@ -1,6 +1,9 @@
 import { Component, NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Animation, AnimationController } from '@ionic/angular';
+import anime from 'animejs/lib/anime.es.js';
+import { start } from 'repl';
+
 
 
 @Component({
@@ -17,5 +20,17 @@ export class HomePage {
     .duration(10000)
     .fromTo('opacity', '0', '1');
   }
+
+  ngOnInit() {
+    anime({
+      targets: '#socialIcon',
+      opacity: [0, 100],
+      easing: 'easeInOutExpo',
+      delay: anime.stagger(250, {start: 2000}) 
+
+    });
+  }
+
+  
 
 }
