@@ -2,7 +2,7 @@ import { Component, NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Animation, AnimationController } from '@ionic/angular';
 import anime from 'animejs/lib/anime.es.js';
-import { start } from 'repl';
+
 
 
 
@@ -26,11 +26,9 @@ export class HomePage {
       targets: '#socialIcon',
       opacity: [0, 100],
       easing: 'easeInOutExpo',
-      delay: anime.stagger(250, {start: 2000}) 
+      delay: anime.stagger(250, {start: 1000}) 
 
     });
-  }
 
-  
-
+}
 }

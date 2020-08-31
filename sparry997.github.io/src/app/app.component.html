@@ -1,3 +1,7 @@
-<ion-app>
-  <ion-router-outlet></ion-router-outlet>
+<ion-app class="main" [@animRoutes]="getPage(appOutlet)">
+  <ion-router-outlet #appOutlet="outlet"></ion-router-outlet>
 </ion-app>
+
+<!-- <div class="main" [@animRoutes]="getPage(appOutlet)">
+  <router-outlet #appOutlet="outlet"></router-outlet>
+</div> -->
