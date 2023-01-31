@@ -12,17 +12,23 @@ export default function Home() {
   return (
     <>
       <Script src="/bootstrap/bootstrap.bundle.min.js" />
+      <Script src="src/homepage.js" strategy="lazyOnload"/>
       <Head>
         <title>Spencer Parry</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed"></link>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto+Condensed"
+        ></link>
       </Head>
       <main className={styles.main}>
         <div
           className={styles.header}
           style={{ width: "100%", height: "40em", position: "relative" }}
         >
-          <nav className={`navbar navbar-expand-lg navbar-light bg-light opacity-75 ${styles.roboto}`}>
+          <nav
+            className={`navbar navbar-expand-lg navbar-light bg-light opacity-75 ${styles.roboto}`}
+          >
             <div className="container-fluid">
               <a className="navbar-brand" href="#">
                 SP
@@ -82,7 +88,15 @@ export default function Home() {
               <div className="col-sm"></div>
               <div className="col-sm">
                 <div className={styles.headerDiv}>
-                  <h1 >Test</h1>
+                  <body>
+                    <div className="typing-container">
+                      <span id="sentence" className="sentence">
+                        Here, take this{" "}
+                      </span>
+                      <span id="feature-text"></span>
+                      <span className="input-cursor"></span>
+                    </div>
+                  </body>
                 </div>
               </div>
             </div>
@@ -96,3 +110,4 @@ export default function Home() {
     </>
   );
 }
+
