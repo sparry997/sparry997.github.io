@@ -1,108 +1,629 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
-    margin: auto;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    overflow: auto;
-    background: linear-gradient(315deg, rgba(204,32,70,1) 3%, rgba(196,125,187,1) 38%, rgba(76,134,168,1) 68%, rgba(155, 201, 149, 1) 98%);
-    animation: gradient 15s ease infinite;
-    background-size: 400% 400%;
-    background-attachment: fixed;
-    width: 100%;
-    height: 40em;
-    position: relative;
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 0%;
-    }
-    50% {
-        background-position: 100% 100%;
-    }
-    100% {
-        background-position: 0% 0%;
-    }
-}
-
-.wave {
-    background: rgb(255 255 255 / 25%);
-    border-radius: 1000% 1000% 0 0;
-    position: fixed;
-    width: 200%;
-    height: 12em;
-    animation: wave 15s -10s linear infinite;
-    transform: translate3d(0, 0, 0);
-    opacity: 0.8;
-    top: 32em;
-    left: 0;
-
-}
-
-.wave:nth-of-type(2) {
-    top: 33.25em;
-    animation: wave 18s linear reverse infinite;
-    opacity: 0.8;
-}
-
-.wave:nth-of-type(3) {
-    top: 34.5em;
-    animation: wave 20s -1s reverse infinite;
-    opacity: 0.9;
-}
-
-@keyframes wave {
-    2% {
-        transform: translateX(1);
-    }
-
-    25% {
-        transform: translateX(-25%);
-    }
-
-    50% {
-        transform: translateX(-50%);
-    }
-
-    75% {
-        transform: translateX(-25%);
-    }
-
-    100% {
-        transform: translateX(1);
-    }
-}
-.bg-custom {
-    background: rgb(66,66,66);
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+  background: linear-gradient(
+    315deg,
+    rgba(204, 32, 70, 1) 3%,
+    rgba(196, 125, 187, 1) 38%,
+    rgba(76, 134, 168, 1) 68%,
+    rgba(155, 201, 149, 1) 98%
+  );
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+  width: 95%;
+  height: 110%;
+  position: relative;
+  border-radius: 25px;
 }
 
 .headerNav {
-    opacity: 75%;
-    font-family: 'Roboto Condensed';
+  opacity: 0.95;
+  backdrop-filter: blur(10px);
+}
+
+.resumeButton {
+  position: relative;
+  top: 50px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.wave {
+  background: rgb(255 255 255 / 25%);
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 12em;
+  animation: wave 15s -10s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  top: 32em;
+  left: 0;
+}
+
+.wave:nth-of-type(2) {
+  top: 33.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  top: 34.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+@keyframes wave {
+  2% {
+    transform: translateX(1);
+  }
+
+  25% {
+    transform: translateX(-25%);
+  }
+
+  50% {
+    transform: translateX(-50%);
+  }
+
+  75% {
+    transform: translateX(-25%);
+  }
+
+  100% {
+    transform: translateX(1);
+  }
+}
+.bg-custom {
+  background: rgb(66, 66, 66);
+}
+
+.headerNav {
+  font-family: "Roboto Condensed";
 }
 
 .headerDiv {
-    background-color: white;
-    opacity: 50%;
-    border-radius: 25px;
-    font-family: 'Roboto Condensed';
-    width: 50px;
-    height: 50px;
+  background-color: white;
+  opacity: 50%;
+  border-radius: 25px;
+  font-family: "Roboto Condensed";
+  width: 50px;
+  height: 50px;
 }
 
+.name {
+  font-size: 140px;
+  text-align: left;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+}
 .content {
-    text-align: center;
-    position: absolute;
-    padding: 20px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 160px;
-    min-width: 500px;
-    overflow:hidden;
-    background-color: white;
-    opacity: 50%;
-    border-radius: 25px;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 35px;
-    line-height: 40px;
-    color: black;
+  text-align: center;
+  position: absolute;
+  padding: 20px;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 38%;
+  min-width: 90%;
+  overflow: hidden;
+  background-color: transparent;
+  opacity: 90%;
+  border-radius: 25px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 100px;
+  line-height: 40px;
+  color: white;
+}
+
+.socials {
+  position: relative;
+  top: 25px;
+  text-decoration: none;
+  font-size: 64px;
+}
+
+.socials a {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.socials a:hover {
+  color: rgba(32, 31, 31, 0.9);
+}
+
+.strip {
+  background: rgb(53, 58, 63);
+  height: 200px;
+  width: 100%;
+}
+
+.stripWhite {
+  background: #ffffff;
+  height: 200px;
+  width: 95%;
+  margin: auto;
+}
+
+.bio {
+  width: 90%;
+  height: 15em;
+
+  border-width: 15px;
+  border-style: solid;
+  border-image: linear-gradient(to right, rgba(76, 134, 168, 1), white) 1;
+  border-radius: 50px;
+  position: relative;
+  top: 50px;
+}
+
+.typeWriteStyle {
+  text-decoration: none;
+  font-size: 100px;
+  color: rgba(32, 31, 31, 0.9);
+  font-family: "Source Code Pro";
+}
+
+.typeWriteStyle a:hover {
+  text-decoration: none;
+  color: rgba(32, 31, 31, 0.9);
+}
+
+
+
+#about {
+  background: rgb(155,201,154);
+background: linear-gradient(180deg, rgba(155,201,154,1) 17%, rgba(95,117,100,1) 62%, rgba(53,58,63,1) 100%);
+  height: 1000px;
+  // border-top: 200px rgb(32, 31, 31) solid;
+  border-radius: 25px;
+  width: 95%;
+  margin: auto;
+}
+
+.leftAbout {
+  background-color: rgb(255 255 255 / 50%);
+  border-radius: 10px;
+}
+
+.aboutCol1{
+  font-family: "Roboto Condensed", sans-serif;
+  // border: 5px solid white; 
+  height:100%; 
+  width:100%;
+  // border-radius: 25px;
+}
+#experience {
+  background: rgb(32, 31, 31);
+  background: linear-gradient(
+    180deg,
+    rgba(53, 58, 63, 1) 0%,
+    rgba(42, 54, 61, 1) 25%,
+    rgba(76, 134, 168, 1) 100%
+  );
+  height: 1100px;
+  // border-top: 200px rgb(32, 31, 31) solid;
+  border-radius: 25px;
+  width: 95%;
+  margin: auto;
+}
+
+#education {
+  background: rgb(53,58,63);
+background: linear-gradient(0deg, rgba(53,58,63,1) 0%, rgba(96,70,108,1) 29%, rgba(153,86,165,1) 64%);
+  height: 750px;
+  border-radius: 25px;
+  width: 95%;
+  margin: auto;
+}
+
+#skills {
+  height: 1200px;
+  background: rgb(204,32,70);
+width: 95%;
+
+//border-radius: 25px;
+border-top-left-radius: 25px;
+border-top-right-radius: 25px;
+margin: auto;
+}
+
+.certTitle{
+  color: #D1E2C4
+}
+
+.certDesc{
+  color:#C1B189
+}
+
+.deepshadow {
+  color: #e0dfdc;
+  // background-color: #333;
+  letter-spacing: .1em;
+  text-shadow: 
+    0 -1px 0 #fff, 
+    0 1px 0 #2e2e2e, 
+    0 2px 0 #2c2c2c, 
+    0 3px 0 #2a2a2a, 
+    0 4px 0 #282828,
+
+    0 22px 30px rgba(0, 0, 0, 0.9);
+}
+
+.retroshadow {
+  // color: #2c2c2c;
+  letter-spacing: .05em;
+  text-shadow: 
+    5px 5px 0px rgb(0, 0, 0), 
+    7px 7px 0px rgba(213, 213, 213, 0.2);
+}
+
+.aboutMe {
+  position: relative;
+  top:10%;
+  color:black;
+  text-align: right;
+  font-size: 140px;
+}
+
+
+.wkExpTitle {
+  position: relative;
+  top:20%;
+  color:rgb(24, 27, 29);
+  text-align: left;
+  font-size: 80px;
+}
+
+.eduTitle {
+  color: #EBEBE8;
+  font-size: 80px;
+}
+
+.workExpContainer {
+  padding-top: 15px;
+  padding-right: 25px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  border-radius: 25px;
+  background-color: rgba(118, 124, 132, .3);
+}
+.wkExpBody {
+  position: relative;
+  top: 20%;
+  color: white;
+}
+.headShot {
+  position: relative;
+  top: 5%;
+  left: 5%;
+  border-radius: 10px;
+}
+
+.bioPar1 {
+  position: relative;
+  top: 25%;
+  color: white;
+}
+
+.bioPar2 {
+  position: relative;
+  top:25%;
+  left: 5%;
+  color:white;
+}
+
+.awsBadge {
+  max-width: 50%;
+}
+
+.top-buffer {
+  margin-top: 75px;
+}
+
+.skillsHeader {
+  font-size: 90px;
+}
+
+.skillsIcons {
+  font-size: 42px;
+}
+
+.skillStar {
+  color: white;
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1550px) {
+  .typeWriteStyle {
+    font-size: 80px;
   }
+  .socials {
+    top: 40px;
+  }
+  .resumeButton {
+    top: 60px;
+  }
+  .eduDetails{
+    padding-left: 0px;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1300px) {
+  
+  #skills{
+    height: 1400px;
+  }
+
+  .languagesUsed{
+    font-size: 18px;
+  }
+  .skillStar{
+    font-size:12px;
+  }
+
+  .skillStarBlack{
+    font-size: 12px;
+  }
+  .typeWriteStyle {
+    font-size: 60px;
+  }
+  .headShot {
+    max-width: 90%;
+    left: 10%;
+  }
+
+  .bioPar2{
+    left: 10%;
+    width: 90%;
+  }
+
+  .aboutMe{
+    font-size: 120px;
+  }
+
+  #experience {
+    height: 1200px;
+  }
+  .eduDetails{
+    padding-left: 0px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+  
+  #skills{
+    height: 1600px;
+  }
+
+  .skillStar{
+    font-size:8px;
+  }
+
+  .skillStarBlack{
+    font-size: 8px;
+  }
+
+  #experience {
+    height: 1500px;
+  }
+
+  .typeWriteStyle {
+    font-size: 44px;
+  }
+  .name {
+    font-size: 100px;
+  }
+  .resumeButton {
+    top: 65px;
+  }
+
+  .headShot {
+    max-width: 85%;
+    top: 12%;
+    left: 10%;
+  }
+
+  .aboutMe {
+    font-size: 100px;
+  }
+
+  .bioPar2 {
+    left: 10%;
+    width: 90%;
+  }
+  .eduDetails{
+    padding-left: 0px;
+    }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 768px) {
+
+  #skills{
+    height: 1900px;
+  }
+
+  .languagesUsed{
+    font-size: 18px;
+  }
+
+  .skillStar{
+    font-size:6px;
+  }
+
+  .skillStarBlack{
+    font-size: 6px;
+  }
+
+  .skillsIcons {
+    font-size: 30px
+  }
+
+  #experience {
+    height: 2000px;
+  }
+
+  .content {
+    top: 65%;
+  }
+
+  #about{
+    height: 1250px;
+  }
+  .name {
+    font-size: 80px;
+  }
+  .typeWriteStyle {
+    font-size: 30px;
+  }
+  .socials {
+    top: 60px;
+  }
+
+  .resumeButton {
+    top: 85px;
+  }
+  .resumeButton {
+    top: 75px;
+  }
+
+  .headShot {
+    max-width: 90%;
+    top:10%;
+  }
+  .aboutMe {
+    font-size: 80px;
+  }
+
+  .bioPar1 {
+    top:40%;
+  }
+
+  .bioPar2 {
+    top: 45%;
+    left: 0%;
+  }
+  .eduDetails{
+    padding-left: 0px;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 550px) {
+
+  .skillsHeader{
+    font-size: 64px;
+  }
+  #skills{
+    height: 2200px;
+  }
+  .skillStar{
+    font-size:6px;
+  }
+
+  .skillStarBlack{
+    font-size: 6px;
+  }
+
+  .skillsIcons {
+    font-size: 64px
+  }
+
+  .certHeading{
+    padding-left: 0px;
+  }
+  .certTitle{
+    font-size:20px;
+  }
+
+  .certDesc {
+    font-size:18px;
+  }
+  .eduTitle{
+    font-size:48px;
+    padding-left: 10px;
+  }
+  .tooMuchSpace{
+    display: none;
+  }
+  .wkExpTitle{
+    font-size: 50px;
+  }
+  #experience {
+    height: 2000px;
+  }
+  
+  #about{
+    height: 1400px;
+  }
+
+  .content {
+    top: 65%;
+  }
+  .name {
+    font-size: 60px;
+    top: 25%;
+  }
+  .typeWriteStyle {
+    font-size: 16px;
+  }
+  .socials {
+    top: 10px;
+    font-size: 40px;
+  }
+
+  .resumeButton {
+    top: 90px;
+  }
+  .resumeButton {
+    top: 55px;
+  }
+
+  .headShot {
+    //max-width: 90%;
+    //width: 90%;
+    top: 25%;
+    left: 0%
+  }
+
+  .aboutMe{
+    top: 40%;
+    font-size: 48px;
+  }
+
+  .bioPar1 {
+    top: 78%;
+  }
+
+  .bioPar2 {
+    top: 100%;
+    left: 0%;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 400px) {
+  #experience {
+    height: 2400px;
+  }
+  #skills{
+    height: 2800px;
+  }
+}
