@@ -228,17 +228,18 @@ background: linear-gradient(180deg, rgba(155,201,154,1) 17%, rgba(95,117,100,1) 
 }
 
 #education {
-  background: rgb(53,58,63);
-background: linear-gradient(0deg, rgba(53,58,63,1) 0%, rgba(96,70,108,1) 29%, rgba(153,86,165,1) 64%);
+  background: rgba(196, 125, 187, 0.5);
   height: 750px;
-  border-radius: 25px;
   width: 95%;
-  margin: auto;
+  border: solid white 5px; 
+  margin: auto; 
+  border-radius: 25px;
 }
 
 #skills {
+  border: solid white 5px; 
   height: 1300px;
-  background: rgb(204,32,70);
+  background: rgba(155, 201, 149, 1) 98%;
 width: 95%;
 
 //border-radius: 25px;
