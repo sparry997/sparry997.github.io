@@ -248,6 +248,11 @@ border-top-right-radius: 25px;
 margin: auto;
 }
 
+.footer{
+  position:relative; 
+  top: 5%;
+}
+
 .certTitle{
   color: #D1E2C4
 }
@@ -353,6 +358,13 @@ margin: auto;
   color: white;
 }
 
+.backToTop {
+  margin-bottom: 50px; 
+  color:white;
+  font-size: 18px;
+  font-family: 'Roboto Condensed';
+}
+
 @media only screen and (min-width: 1300px) and (max-width: 1550px) {
   .typeWriteStyle {
     font-size: 80px;
@@ -370,6 +382,10 @@ margin: auto;
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1300px) {
+
+  .footer {
+    top:7%
+  }
   
   #skills{
     height: 1400px;
@@ -412,6 +428,10 @@ margin: auto;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1000px) {
+
+  .footer{
+    top: 0%;
+  }
   
   #skills{
     height: 1600px;
